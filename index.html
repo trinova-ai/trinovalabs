@@ -1123,7 +1123,7 @@
                     >
                 </li>
             </ul>
-            <a class="nav-cta" href="#" onclick="showPage('contact')"
+            <a class="nav-cta" href="mailto:info@trinovalabs.ai?subject=Consultation%20request"
                 >Book a Consultation</a
             >
         </nav>
@@ -1156,8 +1156,7 @@
                         >
                         <a
                             class="btn-ghost"
-                            href="#"
-                            onclick="showPage('contact')"
+                            href="mailto:info@trinovalabs.ai?subject=Briefing%20request"
                             >Request a Briefing →</a
                         >
                     </div>
@@ -1476,8 +1475,7 @@
                 </p>
                 <a
                     class="btn-primary"
-                    href="#"
-                    onclick="showPage('contact')"
+                    href="mailto:info@trinovalabs.ai?subject=Briefing%20request"
                     style="font-size: 16px; padding: 16px 40px"
                     >Schedule Your Briefing</a
                 >
@@ -1543,7 +1541,7 @@
                                 >
                             </li>
                             <li>
-                                <a href="#" onclick="showPage('contact')"
+                                <a href="mailto:info@trinovalabs.ai?subject=Briefing%20request"
                                     >Book a Briefing</a
                                 >
                             </li>
@@ -1792,8 +1790,7 @@
                 </p>
                 <a
                     class="btn-primary"
-                    href="#"
-                    onclick="showPage('contact')"
+                    href="mailto:info@trinovalabs.ai?subject=Discovery%20session%20request"
                     style="font-size: 15px; padding: 14px 36px"
                     >Request a Discovery Session</a
                 >
@@ -2049,8 +2046,7 @@
                 </p>
                 <a
                     class="btn-primary"
-                    href="#"
-                    onclick="showPage('contact')"
+                    href="mailto:info@trinovalabs.ai?subject=Partnership%20enquiry"
                     style="font-size: 15px; padding: 14px 36px"
                     >Connect with a Partner</a
                 >
@@ -2134,7 +2130,7 @@
                                 <div>
                                     <div class="contact-item-label">Email</div>
                                     <div class="contact-item-value">
-                                        info@trinovalabs.ai
+                                        <a href="mailto:info@trinovalabs.ai?subject=Website%20enquiry">info@trinovalabs.ai</a>
                                     </div>
                                 </div>
                             </div>
@@ -2157,7 +2153,7 @@
                                         Response Time
                                     </div>
                                     <div class="contact-item-value">
-                                        Within 24 business hours
+                                        Within 2 hours
                                     </div>
                                 </div>
                             </div>
@@ -2176,66 +2172,26 @@
                         </div>
                     </div>
 
-                    <div class="contact-form" id="contact-form-wrapper">
+                    <div class="contact-form">
                         <h3>Request a Consultation</h3>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label>First Name</label>
-                                <input type="text" placeholder="Peter" />
-                            </div>
-                            <div class="form-group">
-                                <label>Last Name</label>
-                                <input type="text" placeholder="Smith" />
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label>Business Email</label>
-                            <input type="email" placeholder="you@company.com" />
-                        </div>
-                        <div class="form-group">
-                            <label>Company & Role</label>
-                            <input
-                                type="text"
-                                placeholder="e.g. Acme Corp — Chief Strategy Officer"
-                            />
-                        </div>
-                        <div class="form-group">
-                            <label>Primary Area of Interest</label>
-                            <select>
-                                <option value="">Select a service area…</option>
-                                <option>Shareholder Value Enhancement</option>
-                                <option>AI-Enhanced Products & Services</option>
-                                <option>
-                                    Tech Improvements & Regulatory Advisory
-                                </option>
-                                <option>Full Transformation Programme</option>
-                                <option>General Enquiry</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Tell us about your challenge or goal</label>
-                            <textarea
-                                placeholder="Briefly describe your current situation and what you're looking to achieve…"
-                            ></textarea>
-                        </div>
-                        <button class="form-submit" onclick="submitForm()">
-                            Send Enquiry →
-                        </button>
-                        <p class="form-note">
-                            By submitting, you agree to our
-                            <a href="#">Privacy Policy</a>. We will never share
-                            your details.
+                        <p style="margin: 0 0 28px; color: var(--muted); line-height: 1.6">
+                            Send us a note and a senior partner will reach out
+                            within 2 hours. Every enquiry is
+                            confidential and without obligation.
                         </p>
-
-                        <div class="form-success" id="form-success">
-                            <div class="success-icon">✓</div>
-                            <h3>Thank You — We'll Be in Touch</h3>
-                            <p>
-                                A senior partner will reach out within 24
-                                business hours. We look forward to exploring the
-                                possibilities with you.
-                            </p>
-                        </div>
+                        <a
+                            class="btn-primary"
+                            href="mailto:info@trinovalabs.ai?subject=Website%20enquiry"
+                            style="display: inline-block; font-size: 16px; padding: 16px 40px"
+                            >Email Us at info@trinovalabs.ai</a
+                        >
+                        <p class="form-note" style="margin-top: 20px">
+                            This opens your email app — or write to us directly
+                            at
+                            <a href="mailto:info@trinovalabs.ai?subject=Website%20enquiry"
+                                >info@trinovalabs.ai</a
+                            >.
+                        </p>
                     </div>
                 </div>
             </section>
@@ -2387,94 +2343,6 @@
                 return false;
             }
 
-            function submitForm() {
-                var wrapper = document.getElementById("contact-form-wrapper");
-                var btn = wrapper.querySelector(".form-submit");
-
-                // Gather values
-                var firstName = wrapper
-                    .querySelector("input[type=text]")
-                    .value.trim();
-                var lastName = wrapper
-                    .querySelectorAll("input[type=text]")[1]
-                    .value.trim();
-                var email = wrapper
-                    .querySelector("input[type=email]")
-                    .value.trim();
-                var company = wrapper
-                    .querySelectorAll("input[type=text]")[2]
-                    .value.trim();
-                var interest = wrapper.querySelector("select").value.trim();
-                var message = wrapper.querySelector("textarea").value.trim();
-
-                // Basic client-side validation
-                if (!firstName || !lastName || !email || !message) {
-                    alert(
-                        "Please fill in at least your name, email and message.",
-                    );
-                    return;
-                }
-
-                btn.disabled = true;
-                btn.textContent = "Sending…";
-
-                var body = new URLSearchParams({
-                    first_name: firstName,
-                    last_name: lastName,
-                    email: email,
-                    company: company,
-                    interest: interest,
-                    message: message,
-                });
-
-                fetch("contact.php", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/x-www-form-urlencoded",
-                    },
-                    body: body.toString(),
-                })
-                    .then(function (response) {
-                        return response.json().then(function (data) {
-                            return { ok: response.ok, data: data };
-                        });
-                    })
-                    .then(function (result) {
-                        if (result.ok && result.data.success) {
-                            // Hide form elements, show success message
-                            wrapper
-                                .querySelectorAll(".form-group")
-                                .forEach(function (g) {
-                                    g.style.display = "none";
-                                });
-                            wrapper.querySelector(".form-row").style.display =
-                                "none";
-                            wrapper.querySelector(
-                                ".form-submit",
-                            ).style.display = "none";
-                            wrapper.querySelector(".form-note").style.display =
-                                "none";
-                            wrapper.querySelector("h3").style.display = "none";
-                            document
-                                .getElementById("form-success")
-                                .classList.add("show");
-                        } else {
-                            alert(
-                                result.data.message ||
-                                    "Something went wrong. Please try again.",
-                            );
-                            btn.disabled = false;
-                            btn.textContent = "Send Enquiry →";
-                        }
-                    })
-                    .catch(function () {
-                        alert(
-                            "Could not reach the server. Please check your connection and try again.",
-                        );
-                        btn.disabled = false;
-                        btn.textContent = "Send Enquiry →";
-                    });
-            }
         </script>
     </body>
 </html>
